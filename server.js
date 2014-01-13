@@ -9,7 +9,7 @@ var express = require('express')
 server.listen(conf.port);
 
 app.configure(function(){
-	// statische Datein ausliefern
+	// statische Dateien ausliefern
 	app.use(express.static(__dirname + '/public'));
 });
 
