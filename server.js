@@ -26,7 +26,7 @@ io.sockets.on('connection', function (socket) {
 	// wenn ein Benutzer einen Text senden
 	socket.on('chat', function (data) {
 		// so wird dieser Text an alle anderen Benutzer gesendet
-		socket.emit('chat', { zeit: new Date(), name: data.name || 'Anonym', text: data.text });
+		io.sockets.emit('chat', { zeit: new Date(), name: data.name || 'Anonym', text: data.text });
 	});
 });
 
