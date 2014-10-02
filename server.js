@@ -31,4 +31,4 @@ io.sockets.on('connection', function (socket) {
 });
 
 // Portnummer in die Konsole schreiben
-console.log('Der Server läuft nun unter http://127.0.0.1:' + conf.port);
+console.log('Der Server läuft nun unter http://127.0.0.1:' + conf.port + '/');
