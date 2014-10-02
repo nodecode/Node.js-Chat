@@ -8,10 +8,8 @@ var express = require('express')
 // auf den Port x schalten
 server.listen(conf.port);
 
-app.configure(function(){
-	// statische Dateien ausliefern
-	app.use(express.static(__dirname + '/public'));
-});
+// statische Dateien ausliefern
+app.use(express.static(__dirname + '/public'));
 
 // wenn der Pfad / aufgerufen wird
 app.get('/', function (req, res) {
